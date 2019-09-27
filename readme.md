@@ -15,4 +15,4 @@ Then you should be all set.  Just run the program by entering:
 
 ```console
 $ python3 CvFaceRecTest.py
-```
+```x
