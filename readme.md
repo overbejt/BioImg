@@ -11,6 +11,13 @@ run :
 ```console
 $ pip3 install opencv-python
 ```
+
+It does use numpy as a dependency.  To make sure that you have it 
+installed, enter:
+
+```console
+$ pip3 install numpy
+```
   
 
 ## Running the scripts
