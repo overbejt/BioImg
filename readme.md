@@ -26,7 +26,7 @@ You can do facial detection in an image by running:
 ```console
 $ python3 CvFaceRecTest.py <name of file>
 ```
-For example, you could run, 
+For example you could run, 
 
 ```console
 $ python3 CvFaceRecTest.py images/simple.jpg
