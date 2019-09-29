@@ -6,8 +6,6 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 img = cv2.imread(sys.argv[1])
-#img = cv2.imread('me2.jpg') # It thinks I'm a pirate
-# img = cv2.imread('wonkyFace.jpg') # Does not find face
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
