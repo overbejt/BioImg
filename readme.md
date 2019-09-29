@@ -26,6 +26,11 @@ You can do facial detection in an image by running:
 ```console
 $ python3 CvFaceRecTest.py <name of file>
 ```
+For example, you could run, 
+
+```console
+$ python3 CvFaceRecTest.py images/simple.jpg
+```
 All of the images are stored in the images folder.
 If you would like to do facial detection using a webcam, 
 just open a terminal and cd to the directory containing the scripts.
