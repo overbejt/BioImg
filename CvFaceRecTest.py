@@ -1,10 +1,12 @@
 import numpy as np
 import cv2
+import sys
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
-img = cv2.imread('me2.jpg') # It thinks I'm a pirate
+img = cv2.imread(sys.argv[1])
+#img = cv2.imread('me2.jpg') # It thinks I'm a pirate
 # img = cv2.imread('wonkyFace.jpg') # Does not find face
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -17,6 +19,7 @@ for (x,y,w,h) in faces:
     for (ex,ey,ew,eh) in eyes:
         cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
 
+print('press esc to exit')
 cv2.imshow('img',img)
 
 esc = cv2.waitKey(0)  # press esc to end program
