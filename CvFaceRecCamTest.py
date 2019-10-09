@@ -8,6 +8,8 @@ eye_cascade = cv.CascadeClassifier('haarcascade_eye.xml')
 # Initialize a camera, 0 is usally the web cam
 cam = cv.VideoCapture(0)
 
+print('Press q to quit')
+
 # Loop until user wants to exit
 while(True):
     # Get frame from camera feed
